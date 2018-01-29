@@ -17,19 +17,15 @@ function longPlaneteerCalls(words) {
     if (words[i].length > 4) {
       return true;
     }
-    else {
-      return false;
-    }
   }
+  return false;
 }
 
 function findTheCheese (foods) {
   for (var i =0; i < foods.length; i++) {
-    if (foods[i] === 'cheddar') {
-       return foods[i];
+    if (foods[i] === 'cheddar' || foods[i] === 'gouda' || foods[i] === 'camembert') {
+      return foods[i];
     }
   }
-    if (foods !== 'cheddar') {
-      return 'no cheese!';
-    }
-  }
+  return 'no cheese!';
+}
