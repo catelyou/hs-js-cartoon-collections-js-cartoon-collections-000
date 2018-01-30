@@ -40,5 +40,5 @@ function wordsWithB(words) {
       bword.push(words[i])
     }
   }
-
+  return bwords
 }
